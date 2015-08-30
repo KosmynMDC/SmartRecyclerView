@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Remove headers and footers"
+        android:id="@+id/remove_headers_footers"/>
+
+    <item
+        android:title="Add headers and footers"
+        android:id="@+id/add_headers"/>
+
+    <item
+        android:title="Remove second header"
+        android:id="@+id/remove_second_header"/>
+
+    <item
+        android:title="Remove second footer"
+        android:id="@+id/remove_second_footer"/>
+
+</menu>
