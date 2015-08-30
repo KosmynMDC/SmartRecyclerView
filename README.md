@@ -11,12 +11,20 @@ Methods:
 - `setEmptyView`: sets the view to show if the adapter is empty.
 - `getEmptyView`: return the empty view  that is used to provide feedback to the user that no data is available
 
+Usage:
+
   ```java
   SmartRecyclerView recyclerView = (SmartRecyclerView) findViewById(R.id.recycler_view);
   LinearLayoutManager layouManager = new LinearLayoutManager(this);
   recyclerView.setLayoutManager(layouManager);
   
+  // empty view defined in layout
   recyclerView.setEmptyView(findViewById(R.id.empty_view));
+  
+  // empty view defined in code
+  TextView view = new TextView(context);
+  view.setText("No items available");
+  recyclerView.setEmptyView(view);
   ```
 
 
