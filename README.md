@@ -111,11 +111,14 @@ Usage:
   footer2.setText("Footer - View 2");
   adapter.addHeader(footer2);
   
-  // Remove header 1
+  // Remove second header
   adapter.removeHeader(header1);
   
-  // Remove first footer 
+  // Remove first footer(using position of footer)
   adapter.removeFooter(0);
+  
+  // Remove all headers
+  adapter.removeAllHeaders();
   
   // Remove all footers
   adapter.removeAllFooters();
