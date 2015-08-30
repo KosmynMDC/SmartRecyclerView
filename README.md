@@ -111,7 +111,7 @@ Usage:
   footer2.setText("Footer - View 2");
   adapter.addHeader(footer2);
   
-  // Remove second header
+  // Remove first header
   adapter.removeHeader(header1);
   
   // Remove first footer(using position of footer)
@@ -122,6 +122,10 @@ Usage:
   
   // Remove all footers
   adapter.removeAllFooters();
+  
+  // Get list of headers/footers
+  List headers = adapter.getHeaderList();
+  List footers = adapter.getFooterList();
   ```
   
 License
