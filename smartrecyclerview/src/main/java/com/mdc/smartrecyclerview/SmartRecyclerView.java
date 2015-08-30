@@ -22,8 +22,8 @@ public class SmartRecyclerView extends RecyclerView {
             Adapter<?> adapter = getAdapter();
             if (adapter != null && mEmptyView != null) {
                 int count = adapter instanceof SmartRecyclerViewAdapter
-                        && ((SmartRecyclerViewAdapter) adapter).getHeaderSize() == 0
-                        && ((SmartRecyclerViewAdapter) adapter).getFooterSize() == 0
+                        && ((SmartRecyclerViewAdapter) adapter).getHeaderList().size() == 0
+                        && ((SmartRecyclerViewAdapter) adapter).getFooterList().size() == 0
                         ? ((SmartRecyclerViewAdapter) adapter).getCount() : adapter.getItemCount();
                 if (count == 0) {
                     mEmptyView.setVisibility(View.VISIBLE);
