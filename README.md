@@ -1,15 +1,17 @@
 Android SmartRecyclerView
 ==========================
 
-### 1. Empty View in RecyclerView
-Display a special view called the empty view, When the recycler view adapter is empty. 
+### 1. Empty View for RecyclerView
+Displays a special view called the empty view, when the recycler view adapter is empty. 
 The empty view is used to provide feedback to the user that no data is available.
 The empty view can be positioned anywhere in scren.
 It need to be only attached to the smart recycler view and it's done.
+It has the same behavior with [ListView.setEmptyView()](http://developer.android.com/reference/android/widget/AdapterView.html#setEmptyView%28android.view.View%29).
+
 
 Methods:
 - `setEmptyView`: sets the view to show if the adapter is empty.
-- `getEmptyView`: return the empty view  that is used to provide feedback to the user that no data is available
+- `getEmptyView`: returns the empty view  that is used to provide feedback to the user that no data is available
 
 Usage:
 
